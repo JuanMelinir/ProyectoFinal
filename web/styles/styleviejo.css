@@ -1,0 +1,873 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3%;
+    ;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.collapse {
+    justify-content: right;
+}
+
+a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.hacerPedido {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.pedido {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    font-size: 0;
+}
+
+li {
+    display: inline-block;
+    font-size: 14px;
+    list-style: none;
+    text-align: inline;
+    text-decoration: none;
+}
+
+li a {
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10px;
+    margin-right: 50px;
+    color: rgb(0, 0, 0);
+}
+
+li a:visited {
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10px;
+    margin-right: 50px;
+    color: rgb(151, 14, 14);
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+    padding-left: 0%;
+    background-color: rgb(151, 14, 14);
+}
+
+.sublista {
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.sublista:visited {
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10px;
+    margin-right: 50px;
+    color: white;
+}
+
+footer {
+    background-image: linear-gradient(to left, crimson, black);
+    width: 100%;
+}
+
+.pie {
+    display: grid;
+    width: 100%;
+    height: 75%;
+    justify-items: center;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 100%;
+    grid-template-areas: "seguinos pago footernav"
+}
+
+.seguinos {
+    width: 100%;
+    height: 100%;
+}
+
+.pago {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.navPie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel {
+    height: 90%;
+    width: 40%;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 7%;
+    width: 100%;
+    height: 40%;
+}
+
+.navPie nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30%;
+}
+
+.seguinos p {
+    padding-left: 5%;
+    font: 0.5em;
+    width: 100%;
+    color: white;
+}
+
+p {
+    height: 30%;
+    width: 100%;
+    text-align: left;
+    padding-left: 5%;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: size 0.9em;
+}
+
+#p-contacto {
+    color: white;
+    font-size: medium;
+}
+
+#p-detalle {
+    color: white;
+    height: 8%;
+}
+
+#nosotros {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    width: 40%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+}
+
+#piedepagina {
+    padding-left: 1%;
+    font-size: medium;
+    width: 2%;
+
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.display-4 {
+    padding-top: 10%;
+}
+
+.h2 {
+    padding-top: 25%;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4 {
+    color: white;
+}
+
+.display-5 {
+    color: white;
+    text-align: center;
+}
+
+.row {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-fluid {
+    width: 70%;
+    height: 70%;
+}
+
+.itemMuestra {
+    height: 50%;
+    width: 50%;
+}
+
+.productosVenta h3 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#label {
+    color: white;
+}
+
+.titulo1-index {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Allerta Stencil', sans-serif;
+    padding-top: 15%;
+}
+
+#titulo2-index {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#titulo3-index {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 200%;
+    font-family: 'Allerta Stencil', sans-serif;
+    top: 4%;
+}
+
+#tituloseccion2 {
+    width: 100%;
+    height: 5%;
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 10%;
+    color: black;
+}
+
+.titulo {
+    color: white;
+}
+
+#tituloconsulta {
+    color: white;
+    padding-top: 6%;
+}
+
+#scroll {
+    position: relative;
+    top: 30%;
+}
+
+.tituloproductos {
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#seleccion {
+    width: 40%;
+}
+
+.botonFormulario {
+    color: rgb(253, 253, 253);
+    background-color: crimson;
+    border-color: crimson;
+    width: 30%;
+    height: 8%;
+    margin-bottom: 0 px;
+    ;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.botonFormulario:hover {
+    animation: heartBeat;
+    animation-duration: 3s;
+}
+
+.botonProducto {
+    color: rgb(253, 253, 253);
+    background-color: crimson;
+    border-color: crimson;
+    width: 40%;
+    height: 6%;
+    margin-bottom: 0 px;
+    ;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.botonProducto:hover {
+    animation: heartBeat;
+    animation-duration: 3s;
+}
+
+.enviar {
+    color: rgb(253, 253, 253);
+    background-color: crimson;
+    border-color: crimson;
+    width: 6%;
+    height: 4%;
+    margin-bottom: 0 px;
+    ;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.hacerPedido {
+    color: rgb(253, 253, 253);
+    background-color: crimson;
+    border-color: crimson;
+    width: 10%;
+    height: 5%;
+    margin-bottom: 0 px;
+    ;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    animation: heartBeat;
+    animation-duration: 5s;
+}
+
+section {
+    width: 100%;
+    height: 600px;
+}
+
+#seccion-index {
+    background-image: url("../images/fondoinsiders.svg");
+    height: 600px;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#seccion2-index {
+    display: inline-flex;
+    height: 600px;
+    width: 100%;
+    border-color: black;
+    border-left: solid 10px;
+}
+
+#seccion3-index {
+    background-image: url("../images/fondoscarfaces.svg");
+    height: 600px;
+    width: 100%;
+    display: block;
+}
+
+#seccion-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-image: url("../images/fondoinsiders.svg");
+    height: 600px;
+}
+
+#seccion-galeria {
+    background-image: url("../images/fondoinsiders.svg");
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#slideGaleria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue;
+    width: 100%;
+    height: 50%;
+}
+
+#misproductos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/fondoinsiders.svg");
+    height: 600px;
+}
+
+#seccion-whastapp {
+    display: flexbox;
+    flex-direction: row;
+    align-items: baseline;
+    height: 20%;
+    width: 100%;
+    ;
+}
+
+#titulotabla {
+    color: black;
+    font-family: monospace;
+    font-size: xx-large;
+}
+
+.grilla {
+    display: grid;
+    width: 80%;
+    height: 75%;
+    justify-items: center;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50% 50% 50% 50%;
+    grid-template-areas: "item item item item item"
+        "item item item item item"
+}
+
+#detallesRemeras {
+    display: grid;
+    width: 80%;
+    height: 40%;
+    justify-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 16% 21% 21% 21% 21%;
+    grid-template-areas: "titulo    titulo    titulo   titulo"
+        "detalles detalles detalles detalles"
+        "detalles detalles detalles detalles"
+        "detalles detalles detalles detalles"
+        "detalles detalles detalles detalles";
+    background-color: rgb(48, 240, 80);
+}
+
+#detallesGorras {
+    display: grid;
+    width: 80%;
+    height: 30%;
+    justify-items: center;
+    background-color: aqua
+}
+
+#detallesTazas {
+    display: grid;
+    width: 80%;
+    height: 30%;
+    justify-items: center;
+    background-color: rgb(255, 5, 138);
+}
+
+#titulos {
+    display: flex;
+    flex-direction: column;
+    justify-self: stretch;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(196, 41, 41);
+}
+
+#detalles {
+    display: flex;
+    flex-direction: column;
+    justify-self: stretch;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.caja {
+    justify-self: stretch;
+}
+
+.caja:hover {
+    transform: scale(1.5, 1.5);
+    z-index: 100;
+}
+
+table {
+    background-color: rgb(226, 227, 229);
+}
+
+#titulostabla {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: dimgrey;
+}
+
+#talles {
+    display: flex;
+    flex-direction: column;
+    background-color: chartreuse;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#medidas {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(217, 255, 0);
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#caracteristicas {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 47, 255, 0.486);
+    text-decoration: none;
+    list-style: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#recomendaciones {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 225, 255);
+    text-decoration: none;
+    list-style: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+video {
+    width: 90%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    z-index: -10;
+}
+
+#marca {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    border-left: solid 10px;
+}
+
+#bienvenida {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+}
+
+.muestra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: stretch;
+    width: 60%;
+    height: 100%;
+    background-color: aqua;
+}
+
+#logomarca {
+    height: 20%;
+    width: 20%;
+    margin-right: 0%;
+}
+
+#logoemprendimiento {
+    height: 50%;
+    width: 100%;
+    margin-right: 0%;
+    animation-duration: 4s;
+    animation-name: aparecer;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#logocontacto {
+    height: 100%;
+    width: 90%;
+}
+
+#logofacebook {
+    height: 50%;
+    width: 10%;
+    left: 30%;
+    bottom: 15%;
+    position: relative;
+}
+
+#logoinstagram {
+    height: 50%;
+    width: 10%;
+    position: relative;
+    left: 30%;
+    bottom: 15%;
+}
+
+#ejemploremera {
+    width: 90%;
+    height: 90%;
+    padding-right: 10%;
+    padding-top: 8%;
+}
+
+.productoMuestra {
+    width: 60%;
+    height: 605;
+}
+
+#tamañoremeras {
+    display: inline-flex;
+    align-items: center;
+    height: 85%;
+}
+
+#tamañoA4 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    ;
+}
+
+#tamañoA3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+}
+
+#tamañoestampas {
+    width: 100%;
+    height: 90%;
+}
+
+.item {
+    width: 95%;
+    height: 95%
+}
+
+#logopie {
+    display: flexbox;
+    flex-direction: row;
+    align-items: baseline;
+    height: 90px;
+    width: 90%;
+}
+
+#piedepagina {
+    color: white;
+    width: 70%;
+}
+
+#mediodepago {
+    color: white;
+    text-decoration: none;
+    height: 40%;
+}
+
+#linkpie {
+    color: white;
+}
+
+footer {
+    display: flex;
+    height: 100px;
+}
+
+.productosVenta {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#tabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    border-color: black;
+    border-left: solid 10px;
+    border-right: solid 10px;
+    ;
+}
+
+#datos-nombre {
+    text-align: center;
+    width: 74%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#datos-localidad {
+    text-align: center;
+    width: 76%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#datos-numero {
+    width: 74%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#label {
+    display: inline-flex;
+    color: white;
+}
+
+#label-numero {
+    color: white;
+    display: inline-flex;
+}
+
+#label-localidad {
+    display: inline-flex;
+    color: white;
+}
+
+#label-nombre {
+    display: inline-flex;
+    color: white;
+}
+
+#form-completar {
+
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 60%;
+}
+
+textarea {
+    height: 50%;
+    width: 75%;
+}
+
+#contactoWhastapp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 10%;
+    height: 5%;
+    justify-content: flex-start;
+}
+
+/*tablet*/
+
+/*celular*/
+@media(max-width:320px) {
+    footer {
+        display: flex;
+        background-image: linear-gradient(to left, crimson, black);
+        height: 20%;
+        width: 100%;
+    }
+    #logofacebook {
+        height: 35%;
+        width: 35%;
+    }
+    #logoinstagram {
+        height: 35%;
+        width: 35%;
+    }
+    .navPie {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .navPie nav ul li{
+    width: 100%;  
+    height: 100%;  
+    }
+    .pie {
+        display: grid;
+        width: 100%;
+        height: 75%;
+        justify-items: center;
+        grid-template-columns: 30% 40% 30%;
+        grid-template-rows: 100%;
+        grid-template-areas: "seguinos pago navPie"
+    }
+    .seguinos {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+    .seguinos p {
+        font-size: 70%;
+        width: 100%;
+        color: white;
+    }
+    .pago {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .pago a {
+        font-size: 100%;
+    }
+
+    #mediodepago {
+        color: white;
+        font: 0.2 em;
+    }
+
+}
