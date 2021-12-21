@@ -1,0 +1,757 @@
+@charset "UTF-8";
+/* se encuentran en todas las hojas del proyecto */
+/*cuerpo de la hoja*/
+body {
+  display: flex;
+  flex-direction: column; }
+
+/* encabezado de cada hoja*/
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3%; }
+
+/* contenedor de las distintas etiquetas para navegar */
+.navbar {
+  width: 100%; }
+
+/* el navbar al usarse el responsive se contrae a la izquierda*/
+.collapse {
+  justify-content: right; }
+
+/* lista usada en el navbar */
+ul {
+  list-style: none;
+  font-size: 0; }
+
+/* elemento de la lista */
+li {
+  display: inline-block;
+  font-size: 14px;
+  list-style: none;
+  text-align: inline;
+  text-decoration: none; }
+
+/*link en la lista*/
+li a {
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+ Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 10px;
+  margin-right: 50px;
+  color: black; }
+
+/* cuando un link es visitado no aparece subrayado y es de color blanco*/
+li a:visited {
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+ Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 0px;
+  margin-right: 50px;
+  color: white; }
+
+/* lista en la lista, sería la lista del navbar que tiene la lista en galería */
+/* que a su vez tiene los elementos remeras y gorras */
+ul ul {
+  position: absolute;
+  display: none; }
+
+/* elemento de la lista, es decir remera y gorra */
+ul ul li {
+  display: block; }
+
+/* al posicionar el mouse sobre el elemento galería en el navbar se desplega las opciones remeras y gorras con fondo rojo*/
+ul li:hover ul {
+  display: block;
+  padding-right: 15%;
+  background-color: #a70808; }
+
+/* link */
+a {
+  color: white;
+  list-style: none;
+  text-decoration: none; }
+
+/* párrafo*/
+p {
+  height: 30%;
+  width: 100%;
+  text-align: left;
+  padding-left: 5%;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+ Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font: size 0.9em; }
+
+/* selectores */
+.seleccion {
+  width: 80%; 
+  height: 35px;
+margin-bottom: 5px;}
+
+/*atributos botones*/
+/*tamaño de los section*/
+.seccion, .inicio, .estampasRemeras, .infoPago {
+  width: 100%;
+  height: 600px; }
+
+/*atributos de títulos*/
+h1 {
+  color: black;
+  text-align: center;
+  font-size: xx-large;
+  font-family: "Allerta Stencil"; }
+
+.h2 {
+  color: white;
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Comfortaa', cursive; }
+
+h4 {
+  color: white;
+  text-align: center;
+  font-size: xx-large, sans-serif;
+  font-family: "Verdana"; }
+h3{
+font-size: small;  
+}
+h5 {
+  color: black;
+  text-align: center;
+  font-size: small;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif }
+
+/* pie de página */
+footer {
+  background-image: linear-gradient(to left, crimson, black);
+  width: 100%; }
+
+.footer {
+  display: flex;
+  background-image: linear-gradient(to left, crimson, black);
+  height: 15%;
+  width: 100%; }
+  .footer__contenedor {
+    display: grid;
+    width: 100%;
+    height: 75%;
+    justify-items: center;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 100%;
+    grid-template-areas: "seguinos pago nav"; }
+    .footer__contenedor__seguinos {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%; }
+      .footer__contenedor__seguinos__p {
+        text-align: left;
+        font-size: 100%;
+        width: 100%;
+        color: white; }
+      .footer__contenedor__seguinos__logoinstagram {
+        width: 35px;
+        height: 35px;
+        position: relative;
+        left: 20%; }
+      .footer__contenedor__seguinos__logofacebook {
+        width: 35px;
+        height: 35px;
+        left: 20%;
+        position: relative; }
+    .footer__contenedor__pago {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      width: 100%;
+      height: 100%; }
+      .footer__contenedor__pago__mediodepago {
+        color: white;
+        font-size: 80%;
+        list-style: none;
+        text-decoration: none; }
+    .footer__contenedor__nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 30%; }
+      .footer__contenedor__nav nav ul li a {
+        width: 80%;
+        height: 40%;
+        color: white; }
+
+/*index.html*/
+/* section 1: contiene el título de presentación */
+#ingreso{
+width:25%;
+}
+.inicio {
+  /*background-image: url("../../images/header-background.jpg");*/
+  background-color: white;
+  background-size: 100%;
+  height: 800px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .inicio__titulos {
+    width: 40%;
+}
+    .inicio__titulos__titulo1 {
+      color: rgb(0, 0, 0);
+      /*text-shadow: -2px -2px  #000000;*/
+      font-size: small;
+      text-align: center;
+      font-family: 'Comfortaa', cursive;
+      padding-top: 15%; }
+    #botonIngresar{
+    color:white;  
+  list-style: none;
+  text-decoration: none; 
+    }
+.servicios {
+  background-image: url("../../images/header-background.jpg");
+background-size: cover;
+
+display: flex;
+text-align: center;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/*flex-direction: column;
+align-items: center; 
+justify-content: center;*/
+}
+.cargarServicios {
+  background-image: url("../../images/header-background.jpg");
+background-size: cover;
+
+display: flex;
+text-align: center;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/*flex-direction: column;
+align-items: center; 
+justify-content: center;*/
+}
+.eliminarServicios {
+  background-image: url("../../images/header-background.jpg");
+background-size: cover;
+
+display: flex;
+text-align: center;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/*flex-direction: column;
+align-items: center; 
+justify-content: center;*/
+}
+.modificarServicios {
+  background-image: url("../../images/header-background.jpg");
+background-size: cover;
+
+display: flex;
+text-align: center;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/*flex-direction: column;
+align-items: center; 
+justify-content: center;*/
+}
+.ventas {
+ background-image: url("../../images/header-background.jpg");
+background-size: cover;
+display: flex;
+text-align: center;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/*flex-direction: column;
+align-items: center; 
+justify-content: center;*/
+}
+.eliminarVentas {
+  background-image: url("../../images/header-background.jpg");
+background-size: cover;
+
+display: flex;
+text-align: center;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/*flex-direction: column;
+align-items: center; 
+justify-content: center;*/
+}
+.modificarVentas {
+  background-image: url("../../images/header-background.jpg");
+background-size: cover;
+
+display: flex;
+text-align: center;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/*flex-direction: column;
+align-items: center; 
+justify-content: center;*/
+}
+.mostrarVentas {
+  background-image: url("../../images/header-background.jpg");
+background-size: cover;
+
+display: flex;
+text-align: center;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/*flex-direction: column;
+align-items: center; 
+justify-content: center;*/
+}
+.cargarCliente{
+  background-image: url("../../images/header-background.jpg");
+background-size: cover;
+min-height: 600px;
+display: flex;
+text-align: center;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/*flex-direction: column;
+align-items: center; 
+justify-content: center;*/
+}
+.eliminarCliente{
+  background-image: url("../../images/header-background.jpg");
+background-size: cover;
+display: flex;
+text-align: center;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/*flex-direction: column;
+align-items: center; 
+justify-content: center;*/
+}
+.modificarCliente{
+  background-image: url("../../images/header-background.jpg");
+background-size: cover;
+display: flex;
+text-align: center;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/*flex-direction: column;
+align-items: center; 
+justify-content: center;*/
+}
+.contenedorTitulo{
+width:100%;
+height:5%;
+margin-top: 10px;
+}
+.contenedorDeServicios{
+width:100%;
+min-height: 400px; 
+background-color:rgb(0,0,0);
+display: flex;
+flex-direction: row;
+}
+.contenedorServicio{
+width:10%;
+height:10%;  
+margin-top: 5px;
+margin-bottom: 5px;
+margin-right: 2px;
+margin-left: 2px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: rgb(0, 0, 0);
+opacity: 1;
+margin-bottom: 0 px;
+border-radius: 45px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;  
+}
+#datos{
+  width: 80%;
+  height: 35px;
+  text-align: center;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+.carousel{
+width:100%;  
+}
+.btn{
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  font-size: smaller;
+}
+.contenedorPortada{
+width:40%;
+height: 100%;  
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: cyan;
+}
+.imgLogo{
+width: 10%;    
+}
+.logosServicios{
+width:5%;
+height: 5%;  
+background-color: yellow;
+}
+.contenedorLogo{
+width:10%;
+height: 400px;
+display: flex;
+align-content: center;
+}
+.logoServicio{
+
+}
+.tituloServicio{
+font-size: medium; 
+color: white; 
+}
+#noSeleccionado{
+  background-color: antiquewhite;  
+  }
+.col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+.col-6{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;   
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  width:500px;
+  height:80px;
+  justify-content: center;
+  align-items: center;  
+  text-align: center;
+  align-content: center;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+border-radius: 45px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;  
+}
+.menuServicios{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  height:80px;
+  justify-content: center;
+  align-items: center;  
+  text-align: center;
+  align-content: center;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+border-radius: 45px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;  
+}
+#label{
+color:white  
+}
+.elementoMenu{
+align-content: center;
+justify-content: center;
+text-align: center;
+margin-left: 15px;
+margin-right: 15px;
+}
+#titulosMenu{
+font-size:medium;
+color:white;  
+}
+#seleccionado{
+font-size: small;
+color:#12aa8d;  
+}
+#seleccionadoSubMenu{
+font-size: medium;
+color:#7fff00;  
+}
+#visitado{
+color:#12aa8d;
+font-weight:bolder;
+}
+.cargar{
+  width:80%;
+  display:flex;
+  flex-direction: column;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(20, 22, 21);
+  margin-bottom: 20px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;  
+}
+.cargarVenta{
+  width:80%;
+  display:flex;
+  flex-direction: column;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(20, 22, 21);
+  margin-bottom: 20px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;  
+}
+.tablaDatos{
+  width:90%;
+  min-height:200px; 
+  display:flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: rgb(20, 22, 21);
+  margin-bottom: 20px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;  
+}
+#ventanaServicio{
+width:90%;
+background-color: yellow;
+  min-height:200px; 
+  display:flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: rgb(20, 22, 21);
+  margin-bottom: 20px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+#ventanaPaquete{
+width:90%;
+background-color: green;
+  min-height:200px; 
+  display:flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: rgb(20, 22, 21);
+  margin-bottom: 20px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;   
+}
+.btn{
+margin-top: 20px;
+margin-bottom: 10px;  
+}
+.cell100{
+color:white;
+}
+/*---------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 320px) {
+  /*index.html*/
+  /* section 1: contiene el título de presentación */
+  .inicio {
+    background-size: cover; }
+  /* contenedor que contiene el saludo de bienvenida en el index*/
+  .container {
+    width: 100%; }
+  /*
+.verProductos{
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 50%, 5%,small);  
+}
+.verProductos:hover {
+  animation: heartBeat;
+  animation-duration: 5s;
+}*/
+  /* section 2:"bienvenida" */
+  .bienvenida {
+    background-size: cover; }
+  /* section 3: contiene el carousel que muestra los tamaños de estampa */
+  .estampasRemeras {
+    background-size: cover; }
+  /*---------------------------------------------------------------------------------------------------*/
+  /* sobre-nosotros */
+  /* section 1: contiene el video de demostración*/
+  .nosotros {
+    background-size: cover; }
+  /* video demostración*/
+  .video {
+    width: 100%; }
+  /* section 2: contiene el logo de la marca y el párrafo */
+  .marca {
+    background-size: cover; } }
+
+@media only screen and (min-width: 310px) and (max-width: 331px) {
+  .footer__contenedor__pago {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 100%; }
+    .footer__contenedor__pago__mediodepago {
+      color: white;
+      font-size: 70%;
+      list-style: none;
+      text-decoration: none; } }
+
+@media only screen and (max-width: 600px) {
+  /*---------------------------------------------------------------------------------------------------*/
+  /*sobrenosotros.html*/
+  /*contenedor del párrafo*/
+  .presentacion {
+    width: 100%; }
+  /* párrafo descripción */
+  .p__nosotros {
+    width: 100%;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 200;
+    font-size: small; }
+  /* contacto.html */
+  .contacto {
+    background-image: url("../../images/contacto.png");
+    background-size: cover; }
+  /* formulario de contacto */
+  .form-completar {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box; }
+  /* etiqueta */
+  #datos-nombre {
+    width: 75%; }
+  #datos-localidad {
+    width: 75%; }
+  #datos-numero {
+    width: 75%; }
+  /* área de texto para escribir */
+  textarea {
+    width: 75%; }
+  .botones {
+    width: 100%; }
+  .contactoWhastapp {
+    width: 100%; } }
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  /*---------------------------------------------------------------------------------------------------*/
+  /* productos.html */
+  /* grid que contiene etiquetas para poder elegir distintas caracteristicas de los productos con los precios */
+  .productosVenta {
+    grid-template-columns: repeat(3, 33.33%);
+    width: 100%; }
+    .productosVenta__p {
+      font-size: small; }
+  .opciones {
+    height: 40%;
+    justify-self: stretch; }
+  /* contiene las distintas opciones */
+  .contenedor {
+    display: block;
+    align-content: center;
+    width: 100%; }
+  .seleccion {
+    width: 100%; } }
+
+@media only screen and (max-width: 600px) {
+  /*---------------------------------------------------------------------------------------------------*/
+  /* productos.html */
+  /* grid que contiene etiquetas para poder elegir distintas caracteristicas de los productos con los precios */
+  .productosVenta {
+    grid-template-columns: repeat(2, 50%);
+    width: 100%; }
+    .productosVenta__p {
+      font-size: small; }
+  .opciones {
+    height: 40%;
+    justify-self: stretch; }
+  /* contiene las distintas opciones */
+  .contenedor {
+    display: block;
+    align-content: center;
+    width: 100%; }
+  .seleccion {
+    width: 100%; } }
+
+@media only screen and (max-width: 600px) {
+  /*---------------------------------------------------------------------------------------------------*/
+  /* productos.html */
+  /* etiquetas de selección de atributos del producto */
+  .opciones {
+    height: 40%;
+    justify-self: stretch; }
+  /* contiene las distintas opciones */
+  .contenedor {
+    display: block;
+    align-content: center;
+    width: 100%; }
+  .seleccion {
+    width: 100%; }
+  /* botón de  pedido del producto */
+  .botonProducto {
+    color: white;
+    background-color: crimson;
+    border-color: crimson;
+    width: 50%;
+    height: 15%;
+    font-size: x-small;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
+  /* efecto al posicionar el botón sobre él */
+  .botonProducto:hover {
+    animation: heartBeat;
+    animation-duration: 3s; }
+  /* contiene las imagenes de los talles */
+  .detallesRemera {
+    width: 60%;
+    justify-items: center;
+    margin: 25px; }
+  /* contiene la imagen*/
+  .detalles {
+    display: flex;
+    flex-direction: column;
+    justify-self: stretch;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    margin: 5px;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
+  /* contenedor con las imagenes de la galería */
+  .imagenes {
+    width: 100%;
+    height: 100%; }
+  /* contenedor de la imagen */
+  .imagen {
+    width: 33%; } }
